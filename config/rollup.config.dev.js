@@ -11,7 +11,7 @@ const banner = readFileSync( 'banner.js', 'utf-8' )
   .replace( '${homepage}', pkg.homepage )
 
 export default {
-  entry: `./build/src/${pkg.name}.js`,
+  entry: `./build/${pkg.name}.js`,
   plugins: [
       buble({exclude: './node_modules/**'}),
 		  replace({ 'process.env.NODE_ENV': JSON.stringify('development') })

@@ -4,6 +4,7 @@
 
 - removed common.js support
 - splitted prod and dev bundles into separate files.
+- updated NPM packages
 
 # 0.5.3
 
