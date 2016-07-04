@@ -1,5 +1,10 @@
 ## Changelog
 
+# 0.6.0
+
+- removed common.js support
+- splitted prod and dev bundles into separate files.
+
 # 0.5.3
 
 - fixed issue with debug mode in VSCode
