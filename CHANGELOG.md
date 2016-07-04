@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.6.3
+
+- fixed issues with bundling
+
 # 0.6.2
 
 - fixed sinon issue
