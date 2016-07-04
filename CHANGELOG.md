@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.6.2
+
+- fixed sinon issue
+
 # 0.6.0
 
 - removed common.js support
