@@ -49,7 +49,7 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 
 This probject is a `TypeScript 2.0` boilerplate that export a single file. You can read what is new in `TypeScript v. 2.0` [here](https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript).
 
-It uses `Rollup + Buble` to bundle a nice flat bundle - same as React plans to do [`React - PR #7178`](https://github.com/facebook/react/pull/7178).
+It uses `Rollup + Buble` to bundle a nice flat bundle - same as `React` plans to do [`React - PR #7178`](https://github.com/facebook/react/pull/7178).
 
 `Mocha + Chai + Sinon` are used as the testing stack, and this project is configured to let you run the unit tests with or without [`JSDOM`](https://github.com/tmpvar/jsdom).
 

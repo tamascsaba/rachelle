@@ -8,7 +8,15 @@ const pkg = JSON.parse( readFileSync( 'package.json', 'utf-8' ) );
 export default {
   entry: `./build/src/${pkg.name}.js`,
   plugins: [
-      uglify({}),
+      uglify({
+        warnings: false,
+        compress: {
+					screw_ie8: true,
+					dead_code: true,
+					unused: true,
+					drop_debugger: true
+				}
+      }),
       buble({exclude: './node_modules/**'}),
 		  replace({ 'process.env.NODE_ENV': JSON.stringify('production') })
   ],

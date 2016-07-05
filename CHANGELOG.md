@@ -1,7 +1,8 @@
 ## Changelog
 
-# 0.6.9
+# 0.7.0
 
+- added more uglifyJS settings for production bundle
 - fixed issue with node-modules when using Karma
 - fixed issue with the "watch:build" task
 - updated NPM packages

@@ -1,8 +1,9 @@
 {
   "name": "rachelle",
-  "version": "0.6.9",
+  "version": "0.7.0",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
+  "jsnext:main": "dist/rachelle.mjs",
   "author": "KFlash",
   "license": "MIT",
   "engines": {
@@ -23,6 +24,9 @@
     "rollup",
     "istanbul",
     "bundle",
+    "framework",
+    "universal",
+    "isomorphic",
     "node",
     "server",
     "browser",
@@ -37,6 +41,8 @@
   "files": [
     "src",
     "dist",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
     "README.md"
   ],
   "scripts": {

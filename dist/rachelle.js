@@ -1,6 +1,6 @@
 /*
 * rachelle.js
-* @version 0.6.3
+* @version 0.7.0
 * @copyright (c) 2016 - KFlash
 * @license MIT <undefined/blob/master/LICENSE>
 */
@@ -10,7 +10,7 @@
     (global.rachelle = factory());
 }(this, function () { 'use strict';
 
-    var rachelle = {
+    var index = {
         // 'a' should not be covered
         a: function () {
             var uncovered = true;
@@ -19,6 +19,6 @@
         b: function () { return true; }
     };
 
-    return rachelle;
+    return index;
 
 }));

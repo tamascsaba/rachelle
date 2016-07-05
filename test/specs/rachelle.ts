@@ -1,22 +1,22 @@
-import Rachelle from '../../src/rachelle';
+import App from '../../src/index';
 
 const expect = chai.expect;
 
-describe('Simple tests', () => {
+describe('Basic demo tests', () => {
 
     it('should work!', () => {
         expect(true).to.eql(true);
     });
 
     it('should be a empty object', () => {
-        expect(typeof Rachelle).to.eql('object');
+        expect(App).to.be.a('object');
     });
 
     it('should cover "b"', () => {
-        expect(typeof Rachelle.b).to.eql('function');
+        expect(App.b).to.be.a('function');
     });
 
     it('should cover "b" and return true', () => {
-        expect(Rachelle.b()).to.be.true;
+        expect(App.b()).to.be.true;
     });
 });
