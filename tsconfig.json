@@ -29,7 +29,10 @@
     "exclude": [
     "scripts",
     "build",
-    "node_modules",
+    "node_modules/typescript",
+    "node_modules/typings",
+    "node_modules/tslint",
+    "node_modules/@types",
     "test/setup/setup-dom.js",
     "test/setup/setup-node.js"
 ],

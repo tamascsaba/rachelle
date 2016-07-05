@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.6.5
+
+- don't exclude all NPM packes in node-modules
+
 # 0.6.3
 
 - fixed issues with bundling
