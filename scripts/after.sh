@@ -2,11 +2,6 @@
 
 set -ex -o pipefail
 
-# Setup environment
-cd `dirname $0`
-source ./env.sh
-cd ../..
-
 # Push to coveralls.io
 cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 ## Push to codecov
