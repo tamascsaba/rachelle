@@ -6,7 +6,7 @@ import replace from 'rollup-plugin-replace';
 const pkg = JSON.parse( readFileSync( 'package.json', 'utf-8' ) );
 
 export default {
-  entry: `./build/src/${pkg.name}.js`,
+  entry: `./build/src/index.js`,
   plugins: [
       uglify({
         warnings: false,
