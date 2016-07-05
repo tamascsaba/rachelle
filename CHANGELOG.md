@@ -1,5 +1,11 @@
 ## Changelog
 
+# 0.6.9
+
+- fixed issue with node-modules when using Karma
+- fixed issue with the "watch:build" task
+- updated NPM packages
+
 # 0.6.7
 
 - refactored Travis

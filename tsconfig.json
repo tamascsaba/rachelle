@@ -33,6 +33,8 @@
     "node_modules/typings",
     "node_modules/tslint",
     "node_modules/@types",
+    "node_modules/karma-typescript-preprocessor",
+    "node_modules/webdriver-manager",
     "test/setup/setup-dom.js",
     "test/setup/setup-node.js"
 ],
