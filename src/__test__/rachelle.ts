@@ -1,4 +1,4 @@
-import App from '../../src/index';
+import App from '../index';
 
 const expect = chai.expect;
 

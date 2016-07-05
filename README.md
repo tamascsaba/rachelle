@@ -38,8 +38,6 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - `test` - run all unit tests in the node.js environment
 - `test:jsdom` - run all unit tests in the node.js environment with jsdom
 - `lint` - validates all source and test files
-- `lint-src` - validates all source files
-- `lint-tests` - validates all test files
 - `release` - build the library, push to NPM and Github
 - `watch:tests` - run all unit tests and watch files for changes
 - `watch:build` - watch your TypeScript files and trigger recompilation on changes

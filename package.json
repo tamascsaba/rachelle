@@ -46,22 +46,20 @@
     "README.md"
   ],
   "scripts": {
-    "build": "npm-run-all --parallel lint:src build:dev build:prod",
+    "build": "npm-run-all --parallel lint build:dev build:prod",
     "build:dev": "cross-env NODE_ENV=development rollup -c config/rollup.config.dev.js",
     "build:prod": "cross-env NODE_ENV=production rollup -c config/rollup.config.prod.js",
-    "coverage": "npm run clean:build && npm run pretest && node --harmony ./node_modules/istanbul/lib/cli.js cover --root ./build/src --report lcov --report text ./node_modules/mocha/bin/_mocha ./build/test/**/*.js",
+    "coverage": "npm run clean:build && npm run pretest && node --harmony ./node_modules/istanbul/lib/cli.js cover --root ./build -x **/__test__/** --report lcov --report text ./node_modules/mocha/bin/_mocha ./build/__test__/**/*.js",
     "clean": "rimraf ./dist/* ./build/* ./coverage/*",
     "clean:build": "rimraf ./build/*",
     "debug": "cross-env NODE_ENV=debug npm-run-all clean pretest",
     "prebuild": "tsc -t es5 -m es6 --skipLibCheck -p ./tsconfig.json",
     "pretest": "tsc --sourceMap --skipLibCheck -t es5 --m umd -p ./tsconfig.json",
-    "test": "cross-env NODE_ENV=test npm run lint:tests && mocha test/specs/**/*.ts",
-    "test:jsdom": "cross-env NODE_ENV=test npm run lint:tests && mocha --require test/setup/setup-dom.js test/specs/**/*.ts",
-    "lint": "npm-run-all --parallel lint:src lint:tests",
-    "lint:src": "tslint src/**/*.ts src/**/*.tsx",
-    "lint:tests": "tslint test/specs/**/*.ts test/specs/**/*.tsx",
+    "test": "cross-env NODE_ENV=test npm run lint && mocha ./src/**/**__test__/**/*.ts",
+    "test:jsdom": "cross-env NODE_ENV=test npm run lint && mocha --require test/setup/setup-dom.js test/specs/**/*.ts",
+    "lint": "tslint src/**/*.ts src/**/*.tsx",
     "update:dependencies": "ncu -u",
-    "watch:tests": "cross-env NODE_ENV=watch mocha test/specs/**/*.ts -R spec --bail --watch",
+    "watch:tests": "cross-env NODE_ENV=watch mocha ./src/**/**__test__/**/*.ts -R spec --bail --watch",
     "watch:build": "cross-env NODE_ENV=watch tsc -t es5 -m es6 --skipLibCheck -p ./tsconfig.json -w"
   },
   "devDependencies": {

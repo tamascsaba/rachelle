@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.7.2
+
+- inlined tests in the `./src/*` folder. Same as Angular2 and React does it.
+
 # 0.7.0
 
 - added more uglifyJS settings for production bundle
