@@ -25,11 +25,12 @@ cache:
     - node_modules
     - ./.chrome/chromium
 
+
 install:
-  - ./scripts/build.sh
+  - ./scripts/install.sh
 
 script:
-  - ./scripts/coverage.sh
+  - ./scripts/build.sh && ./scripts/coverage.sh
 
 after_script:
   - ./scripts/cleanup.sh
