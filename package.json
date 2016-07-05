@@ -1,6 +1,6 @@
 {
   "name": "rachelle",
-  "version": "0.7.1",
+  "version": "0.7.3",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
   "jsnext:main": "dist/rachelle.mjs",
@@ -56,7 +56,7 @@
     "prebuild": "tsc -t es5 -m es6 --skipLibCheck -p ./tsconfig.json",
     "pretest": "tsc --sourceMap --skipLibCheck -t es5 --m umd -p ./tsconfig.json",
     "test": "cross-env NODE_ENV=test npm run lint && mocha ./src/**/**__test__/**/*.ts",
-    "test:jsdom": "cross-env NODE_ENV=test npm run lint && mocha --require test/setup/setup-dom.js test/specs/**/*.ts",
+    "test:jsdom": "cross-env NODE_ENV=test npm run lint && mocha --require test/setup/setup-dom.js ./src/**/**__test__/**/*.ts",
     "lint": "tslint src/**/*.ts src/**/*.tsx",
     "update:dependencies": "ncu -u",
     "watch:tests": "cross-env NODE_ENV=watch mocha ./src/**/**__test__/**/*.ts -R spec --bail --watch",
