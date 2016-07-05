@@ -25,7 +25,6 @@ cache:
     - node_modules
     - ./.chrome/chromium
 
-
 install:
   - ./scripts/install.sh
 

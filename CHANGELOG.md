@@ -1,5 +1,10 @@
 ## Changelog
 
+# 0.6.6
+
+- improved Travis so Chromium are configured by default
+- added linting of source file during build
+
 # 0.6.5
 
 - don't exclude all NPM packes in node-modules
