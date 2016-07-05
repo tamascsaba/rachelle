@@ -1,12 +1,8 @@
 # Install version of npm that we are locked against
-npm install -g npm@3.10.4
+npm i -g npm@3
 
-# Install all npm dependencies
+# Disable the spinner, it looks bad on Travis
+npm config set spin false
+
+# Install all NPM packages
 npm i
-
-# Install Chromium
-
-./scripts/install_chromium.sh
-
-# node tools/chromedriverpatch.js
-$(npm bin)/webdriver-manager update
