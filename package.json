@@ -1,6 +1,6 @@
 {
   "name": "rachelle",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
   "author": "KFlash",
@@ -49,6 +49,7 @@
     "debug": "cross-env NODE_ENV=debug npm-run-all clean pretest",
     "prebuild": "tsc -t es5 -m es6 --skipLibCheck -p ./tsconfig.json",
     "pretest": "tsc --sourceMap --skipLibCheck -t es5 --m umd -p ./tsconfig.json",
+    "postinstall": "webdriver-manager update",
     "test": "cross-env NODE_ENV=test npm run lint:tests && mocha test/specs/**/*.ts",
     "test:jsdom": "cross-env NODE_ENV=test npm run lint:tests && mocha --require test/setup/setup-dom.js test/specs/**/*.ts",
     "lint": "npm-run-all --parallel lint:src lint:tests",
