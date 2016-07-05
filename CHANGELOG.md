@@ -1,10 +1,8 @@
 ## Changelog
 
-# 0.6.6
+# 0.6.7
 
-- improved Travis so Chromium are configured by default
-- added linting of source file during build
-- added selenium-webdriver
+- refactored Travis
 
 # 0.6.5
 

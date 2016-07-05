@@ -1,6 +1,6 @@
-#####
+###########
 # Travis CI
-######
+############
 
 language: node_js
 # Is `sudo` required? If not, jobs are run on container-based infrastructure.
@@ -8,28 +8,25 @@ sudo: false
 node_js:
   - "stable"
   - "5"
-matrix:
-  fast_finish: true
 
 addons:
   apt:
     sources:
       # needed to install g++ that is used by npms's native modules
       - ubuntu-toolchain-r-test
-      - google-chrome
     packages:
       - g++-4.8
 
 cache:
   directories:
     - node_modules
-    - ./.chrome/chromium
 
 install:
   - ./scripts/install.sh
 
 script:
-  - ./scripts/build.sh && ./scripts/coverage.sh
+  - ./scripts/build.sh
+  - ./scripts/coverage.sh
 
 after_script:
   - ./scripts/cleanup.sh
