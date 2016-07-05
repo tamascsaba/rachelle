@@ -53,6 +53,8 @@ It uses `Rollup + Buble` to bundle a nice flat bundle - same as React plans to d
 
 `Mocha + Chai + Sinon` are used as the testing stack, and this project is configured to let you run the unit tests with or without [`JSDOM`](https://github.com/tmpvar/jsdom).
 
+It's main goal is to produce a smalø sized production bundle. Less bytes, more happy customers!
+
 ## Usage
 You can simply use this project as a drop-in replacement for any TypeScript projects if you need something fast, and lightweight. Just replace the `./src` and `./test` folder and it should work right out of the box.
 
