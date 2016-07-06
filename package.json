@@ -1,13 +1,14 @@
 {
   "name": "rachelle",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
   "jsnext:main": "dist/rachelle.mjs",
   "author": "KFlash",
   "license": "MIT",
   "engines": {
-    "node": ">= 5.4.1 < 6"
+    "node": ">= 5.4.1 < 6",
+    "npm": ">= 3.5.3"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "keywords": [
     "typescript",
+    "ts",
     "microsoft",
     "mocha",
     "boilerplate",
@@ -50,12 +52,13 @@
     "build:dev": "cross-env NODE_ENV=development rollup -c config/rollup.config.dev.js",
     "build:prod": "cross-env NODE_ENV=production rollup -c config/rollup.config.prod.js",
     "coverage": "npm run clean:build && npm run pretest && node --harmony ./node_modules/istanbul/lib/cli.js cover --root ./build/src --report lcov --report text ./node_modules/mocha/bin/_mocha ./build/test/**/*.js",
-    "clean": "rimraf ./dist/* ./build/* ./coverage/*",
-    "clean:build": "rimraf ./build/*",
+    "clean": "rimraf dist build coverage",
+    "clean:build": "rimraf build",
     "debug": "cross-env NODE_ENV=debug npm-run-all clean pretest",
+    "prepublish": "npm run build",
     "prebuild": "tsc -t es5 -m es6 --skipLibCheck -p ./tsconfig.json",
     "pretest": "tsc --sourceMap --skipLibCheck -t es5 --m umd -p ./tsconfig.json",
-    "test": "cross-env NODE_ENV=test npm run lint:tests && mocha test/specs/**/*.ts",
+    "test": "cross-env NODE_ENV=test npm run lint:tests && mocha -t 50000 test/specs/**/*.ts",
     "test:jsdom": "cross-env NODE_ENV=test npm run lint:tests && mocha --require test/setup/setup-dom.js test/specs/**/*.ts",
     "lint": "npm-run-all --parallel lint:src lint:tests",
     "lint:src": "tslint src/**/*.ts src/**/*.tsx",
