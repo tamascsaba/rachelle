@@ -1,6 +1,6 @@
 {
   "name": "rachelle",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha & Chai. TSLint for better code quality.",
   "main": "dist/rachelle.es5.js",
   "jsnext:main": "dist/rachelle.js",
@@ -10,6 +10,7 @@
     "node": ">= 5.4.1 < 6",
     "npm": ">= 3.5.3"
   },
+  "homepage": "https://github.com/kflash/rachelle",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kflash/rachelle.git"
