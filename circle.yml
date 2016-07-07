@@ -10,8 +10,8 @@ machine:
     version: 'stable'
 
 dependencies:
-  cache_directories:
-    - node_modules
+#  cache_directories:
+ #   - node_modules
   pre:
      - npm set progress=false
      - export DISPLAY=:99.0
