@@ -1,5 +1,10 @@
 ## Changelog
 
+# 0.9.4
+
+- fixed issue with bundling
+- fixed issue with TypeScript transpilling
+
 # 0.9.0
 
 - added support for TypeScript declarations

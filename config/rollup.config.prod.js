@@ -6,7 +6,7 @@ import replace from 'rollup-plugin-replace';
 const pkg = JSON.parse( readFileSync( 'package.json', 'utf-8' ) );
 
 export default {
-  entry: `./dist/${pkg.name}.js`,
+  entry: `./build/src/${pkg.name}.js`,
   plugins: [
       uglify({
         warnings: false,
@@ -23,7 +23,7 @@ export default {
   sourceMap: false,
   moduleName: pkg.name,
   targets: [
-    {  dest: `./dist/${pkg.name}.es5.min.js`, format: 'umd' }
+    {  dest: `./dist/${pkg.name}.min.js`, format: 'umd' }
   ]
 };
 

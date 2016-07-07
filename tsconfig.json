@@ -25,7 +25,7 @@
     "exclude": [
     "scripts",
     "build",
-    "node_modules/typescript",
+    "node_modules",
     "node_modules/typings",
     "node_modules/tslint",
     "node_modules/@types",
