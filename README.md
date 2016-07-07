@@ -5,9 +5,13 @@
 [![Coverage Status](https://coveralls.io/repos/github/Kflash/rachelle/badge.svg?branch=master)](https://coveralls.io/github/Kflash/rachelle?branch=master)
 [![codecov](https://codecov.io/gh/Kflash/rachelle/branch/master/graph/badge.svg)](https://codecov.io/gh/Kflash/rachelle)
 [![npm version](https://badge.fury.io/js/rachelle.svg)](https://badge.fury.io/js/rachelle)
+[![npm downloads](https://img.shields.io/npm/dm/rachelle.svg)](https://www.npmjs.org/package/rachelle)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/kflash/rachelle/blob/master/LICENSE.md)
 
-This package contains a compact and lightweight `TypeScript 2.0` boilerplate that export a single file.
+> Fast, compact and lightweight `TypeScript 2.0` boilerplate that export a single file.
+
+This boilerplate uses `TypeScript 2.0` by default, and `Rollup + Buble` to bundle a nice flat production bundle.
+`Mocha + Chai + Sinon` are used as the testing stack. Unit tests can be run with or without [`JSDOM`](https://github.com/tmpvar/jsdom).
 
 Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 
@@ -45,16 +49,6 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - `watch:build` - watch your TypeScript files and trigger recompilation on changes
 - `update:dependencies` - update npm packages
 
-## What is this boilerplate
-
-This probject is a `TypeScript 2.0` boilerplate that export a single file. You can read what is new in `TypeScript v. 2.0` [here](https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript).
-
-It uses `Rollup + Buble` to bundle a nice flat bundle - same as `React` plans to do [`React - PR #7178`](https://github.com/facebook/react/pull/7178).
-
-`Mocha + Chai + Sinon` are used as the testing stack, and this project is configured to let you run the unit tests with or without [`JSDOM`](https://github.com/tmpvar/jsdom).
-
-The main purpose with this project is to get the job done, and produce a small sized production bundle. Less bytes, more happy customers!
-
 ## Usage
 You can simply use this project as a drop-in replacement for any TypeScript projects if you need something fast, and lightweight. Just replace the `./src` and `./test` folder and it should work right out of the box.
 
@@ -67,6 +61,10 @@ The coverage reports are generated with `Istanbul`, and delivered to `coveralls.
 Istanbul generate a 100% correct coverage report. See the source and test files and do a comparison.
 
 ## FAQ
+
+#### Can this boilerplate be used together with React?
+
+Yes. `Bublé` supports JSX, and in fact React are now swapping out Browserify with Rollup. You can read more about it here - [`React - PR #7178`](https://github.com/facebook/react/pull/7178).
 
 #### How to use this boilerplate with Karma?
 
