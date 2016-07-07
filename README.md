@@ -19,6 +19,8 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 ## Features
 
 - [x] Statically typed build system for working with [Typescript](https://www.typescriptlang.org/) 2.0 Pre
+- [x] Auto generated definition file (*.d.ts*)
+- [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/).
 - [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/).
 - [x] Coverage report with [Istanbul](https://github.com/gotwarlost/istanbul)
 - [x] Dead code elimination
