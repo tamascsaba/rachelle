@@ -41,7 +41,7 @@ Then type few commands known to every Node developer...
 git clone --depth 1 https://github.com/kflash/rachelle.git
 cd rachelle
 # install the project's dependencies
-npm install
+npm i
 
 # bundle both a development and production bundle
 npm build
