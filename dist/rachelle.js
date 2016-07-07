@@ -1,6 +1,6 @@
 /*
 * rachelle.js
-* @version 0.8.1
+* @version 0.8.2
 * @copyright (c) 2016 - KFlash
 * @license MIT <undefined/blob/master/LICENSE>
 */
@@ -17,8 +17,10 @@
      * bundling using rollup you can mark those modules as external and have them
      * excluded or, if they have a jsnext:main entry in their package.json (like
      * this package does), let rollup bundle them into your dist file.
+     *
+     * Environment variabels are also supported, as seen in the example below.
+     * The example code will be removed in the production build.
      */
-    // Environment variable example. This will be removed in the productionbuild
     if ("development" !== 'production') {
         console.log('production build');
     }
