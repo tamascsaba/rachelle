@@ -7,7 +7,7 @@
  * this package does), let rollup bundle them into your dist file.
  */
 
-// Environment variable example. This will be removed in the productionbuild
+// Environment variable example. This will be removed in the production build
 if (process.env.NODE_ENV !== 'production') {
     console.log('production build');
 }
