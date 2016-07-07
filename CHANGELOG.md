@@ -1,5 +1,14 @@
 ## Changelog
 
+# 0.9.0
+
+- added support for TypeScript declarations
+- TypeScript transpile to ES6 by default. Source folder have changed to dist.
+- prod and dev files now have the es5 prefix
+- es module support
+- faster bundling
+- removed sinon support
+
 # 0.8.0
 
 - added type definitions for node in `tsconfig.json`. All node stuff should now work!

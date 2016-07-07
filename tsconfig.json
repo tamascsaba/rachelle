@@ -16,12 +16,8 @@
         "inlineSourceMap": false,
         "suppressImplicitAnyIndexErrors": false,
         "outDir": "build/",
-        "types": ["mocha", "chai", "sinon", "node"]
+        "types": ["mocha", "chai", "node"]
 },
-    "filesGlob": [
-    "src/**/*.ts",
-    "src/**/*.tsx"
-],
     "formatCodeOptions": {
        "indentSize": 2,
        "tabSize": 2

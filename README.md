@@ -12,7 +12,7 @@
 
 This boilerplate uses `TypeScript 2.0` by default, and `Rollup + Buble` to bundle a flat production bundle.
 
-`Mocha + Chai + Sinon` are used as the testing stack. Unit tests can be run with or without [`JSDOM`](https://github.com/tmpvar/jsdom).
+`Mocha + Chai` are used as the testing stack. Unit tests can be run with or without [`JSDOM`](https://github.com/tmpvar/jsdom).
 
 Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 
@@ -26,8 +26,8 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - [x] Optional [JSDOM](https://github.com/tmpvar/jsdom)
 - [x] [Rollup](http://rollupjs.org/) for bundling
 - [x] [Bublé](https://gitlab.com/Rich-Harris/buble) as the ES2015 compiler
-- [x] [Sinon](http://sinonjs.org/) for test doubles
 - [x] [Mocha](https://mochajs.org/) & [Chai](http://chaijs.com/) de facto standard
+- [x] ES module support
 - [x] JSX
 - [x] Environment variabels
 - [x] Easy debugging
