@@ -1,5 +1,10 @@
 ## Changelog
 
+# 0.8.0
+
+- added type definitions for node in `tsconfig.json`. All node stuff should now work!
+- prepeared to auto-fix console.log issue soon as it get fixed. https://github.com/Microsoft/TypeScript/issues/9545
+
 # 0.7.0
 
 - added more uglifyJS settings for production bundle

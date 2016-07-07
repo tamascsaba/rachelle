@@ -16,7 +16,7 @@
         "inlineSourceMap": false,
         "suppressImplicitAnyIndexErrors": false,
         "outDir": "build/",
-        "types": ["mocha", "chai", "sinon"]
+        "types": ["mocha", "chai", "sinon", "node"]
 },
     "filesGlob": [
     "src/**/*.ts",
