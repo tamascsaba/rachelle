@@ -21,17 +21,12 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - [x] Statically typed build system for working with [Typescript](https://www.typescriptlang.org/) 2.0 Pre
 - [x] Auto generated definition file (*.d.ts*)
 - [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/).
-- [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/).
 - [x] Coverage report with [Istanbul](https://github.com/gotwarlost/istanbul)
-- [x] Dead code elimination
-- [x] VSCode integration
 - [x] Optional [JSDOM](https://github.com/tmpvar/jsdom)
 - [x] [Rollup](http://rollupjs.org/) for bundling
 - [x] [Bublé](https://gitlab.com/Rich-Harris/buble) as the ES2015 compiler
 - [x] [Mocha](https://mochajs.org/) & [Chai](http://chaijs.com/) de facto standard
-- [x] ES module support
-- [x] JSX
-- [x] Environment variabels
+- [x] Environment variabels for production and development
 - [x] Easy debugging
 
 ## Getting started
