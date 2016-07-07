@@ -1,6 +1,6 @@
 {
   "name": "rachelle",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
   "jsnext:main": "dist/rachelle.mjs",
@@ -72,7 +72,7 @@
     "@types/mocha": "^2.2.25-alpha",
     "@types/sinon": "^1.16.24-alpha",
     "@types/sinon-chai": "^2.7.24-alpha",
-    "@types/selenium-webdriver": "^2.44.24-alpha",
+    "@types/node": "^4.0.26-alpha",
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
     "coveralls": "^2.11.9",
@@ -96,9 +96,6 @@
     "ts-node": "^0.9.3",
     "tslint": "next",
     "typescript": "next"
-  },
-  "dependencies": {
-    "@types/node": "^4.0.26-alpha"
   },
   "npmName": "rachelle",
   "npmFileMap": [

@@ -31,7 +31,23 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - [x] Environment variabels
 - [x] Easy debugging
 
-## npm Scripts
+## Getting started
+
+The only development dependency of this project is [Node.js](https://nodejs.org/en/). So just make sure you have it installed.
+Then type few commands known to every Node developer...
+
+```bash
+git clone --depth 1 https://github.com/kflash/rachelle.git
+cd rachelle
+# install the project's dependencies
+npm install
+
+# bundle both a development and production bundle
+npm build
+```
+... and boom! You have it all setup for you!
+
+## NPM
 
 - `build` - creates a development and production bundle
 - `build:dev`  - creates a development bundle
