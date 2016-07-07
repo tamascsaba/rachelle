@@ -67,9 +67,13 @@ npm build
 - `update:dependencies` - update npm packages
 
 ## Usage
+
 You can simply use this project as a drop-in replacement for any TypeScript projects if you need something fast, and lightweight. Just replace the `./src` and `./test` folder and it should work right out of the box.
 
-Both `Travis CI` and `Circle CI` are supported.
+Use `npm run build` to bundle your source files. The `TypeScript compiler` will transpile your source code down to `ES6` format in a a `.js` file.
+TypeScript declarations for your bundle will be in the `./dist` folder as well.
+
+Rollup will generate a `es5.js` bundle for development, and `es5.min.js`  for production.
 
 ## Coverage reports
 
