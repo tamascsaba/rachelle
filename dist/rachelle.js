@@ -5,9 +5,9 @@
 * @license MIT <https://github.com/kflash/rachelle/blob/master/LICENSE>
 */
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
-    (factory());
+    (global.rachelle = factory());
 }(this, function () { 'use strict';
 
     /*
@@ -21,27 +21,18 @@
      * Environment variabels are also supported as seen in the example below.
      * The example code will be removed in the production build.
      */
-    (function (factory) {
-        if (typeof module === 'object' && typeof module.exports === 'object') {
-            var v = factory(require, exports); if (v !== undefined) module.exports = v;
-        }
-        else if (typeof define === 'function' && define.amd) {
-            define(["require", "exports"], factory);
-        }
-    })(function (require, exports) {
-        "use strict";
-        if ("development" !== 'production') {
-            console.log('production build');
-        }
-        Object.defineProperty(exports, "__esModule", { value: true });
-        exports.default = {
-            // 'a' should not be covered
-            a: function () {
-                var uncovered = true;
-                return uncovered;
-            },
-            b: function () { return true; }
-        };
-    });
+    if ("development" !== 'production') {
+        console.log('production build');
+    }
+    var rachelle = {
+        // 'a' should not be covered
+        a: function () {
+            var uncovered = true;
+            return uncovered;
+        },
+        b: function () { return true; }
+    };
+
+    return rachelle;
 
 }));

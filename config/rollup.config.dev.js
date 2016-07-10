@@ -12,7 +12,7 @@ const banner = readFileSync( 'banner.js', 'utf-8' )
   .replace( '${homepage}', pkg.homepage )
 
 export default {
-  entry: `./build/src/${pkg.name}.js`,
+  entry: `./src/${pkg.name}.ts`,
   plugins: [
       typescript(),
       buble({exclude: './node_modules/**'}),

@@ -7,7 +7,7 @@ import typescript from 'rollup-plugin-typescript';
 const pkg = JSON.parse( readFileSync( 'package.json', 'utf-8' ) );
 
 export default {
-  entry: `./build/src/${pkg.name}.js`,
+  entry: `./src/${pkg.name}.ts`,
   plugins: [
       uglify({
         warnings: false,
