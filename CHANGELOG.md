@@ -1,5 +1,11 @@
 ## Changelog
 
+# 0.10.0
+
+- Bundle now happen in memoy.
+- Uses rollup-plugin-typescript for bundling.
+- Updated NPM packages
+
 # 0.9.4
 
 - fixed issue with bundling
