@@ -2,6 +2,7 @@ import { readFileSync } from 'fs';
 import buble from 'rollup-plugin-buble';
 import replace from 'rollup-plugin-replace';
 import typescript from 'rollup-plugin-typescript';
+import ts from 'typescript';
 
 const pkg = JSON.parse( readFileSync( 'package.json', 'utf-8' ) );
 
@@ -14,7 +15,9 @@ const banner = readFileSync( 'banner.js', 'utf-8' )
 export default {
   entry: `./src/${pkg.name}.ts`,
   plugins: [
-      typescript(),
+      typescript({
+        typescript: ts
+    }),
       buble({exclude: './node_modules/**'}),
 		  replace({ 'process.env.NODE_ENV': JSON.stringify('development') })
   ],

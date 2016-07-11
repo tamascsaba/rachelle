@@ -1,6 +1,6 @@
 {
   "name": "rachelle",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha & Chai. TSLint for better code quality.",
   "main": "dist/rachelle.js",
   "author": "KFlash",
@@ -87,7 +87,7 @@
     "rollup-plugin-buble": "0.12.1",
     "rollup-plugin-multi-entry": "^2.0.0",
     "rollup-plugin-replace": "1.1.1",
-    "rollup-plugin-typescript": "github:AdThrive/rollup-plugin-typescript",
+    "rollup-plugin-typescript": "0.7.6",
     "rollup-plugin-uglify": "1.0.1",
     "ts-node": "^0.9.3",
     "tslint": "next",

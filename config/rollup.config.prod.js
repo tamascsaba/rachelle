@@ -3,6 +3,7 @@ import buble from 'rollup-plugin-buble';
 import uglify from 'rollup-plugin-uglify';
 import replace from 'rollup-plugin-replace';
 import typescript from 'rollup-plugin-typescript';
+import ts from 'typescript';
 
 const pkg = JSON.parse( readFileSync( 'package.json', 'utf-8' ) );
 
@@ -18,7 +19,9 @@ export default {
 					drop_debugger: true
 				}
       }),
-      typescript(),
+      typescript({
+        typescript: ts
+    }),
       buble({exclude: './node_modules/**'}),
 		  replace({ 'process.env.NODE_ENV': JSON.stringify('production') })
   ],
