@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.10.2
+
+- improved Rollup bundling
+
 # 0.10.0
 
 - Bundle now happen in memoy.

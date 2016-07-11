@@ -24,8 +24,7 @@ export default {
   ],
   sourceMap: false,
   moduleName: pkg.name,
-  targets: [
-    {  dest: `./dist/${pkg.name}.min.js`, format: 'umd' }
-  ]
+  format: 'umd',
+  dest: `./dist/${pkg.name}.min.js`
 };
 

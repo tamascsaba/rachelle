@@ -1,6 +1,6 @@
 /*
 * rachelle.js
-* @version 0.10.0
+* @version 0.10.1
 * @copyright (c) 2016 - KFlash
 * @license MIT <https://github.com/kflash/rachelle/blob/master/LICENSE>
 */
@@ -36,3 +36,4 @@
     return rachelle;
 
 }));
+//# sourceMappingURL=rachelle.js.map

@@ -19,12 +19,8 @@ export default {
 		  replace({ 'process.env.NODE_ENV': JSON.stringify('development') })
   ],
   banner:  banner,
-  sourceMap: false,
   moduleName: pkg.name,
-  targets: [
-  {
-      dest: `./dist/${pkg.name}.js`, format: 'umd',
-  }
-  ]
+  format: 'umd',
+  dest: pkg.main
 };
 
