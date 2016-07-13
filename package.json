@@ -75,7 +75,7 @@
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
     "coveralls": "^2.11.9",
-    "cross-env": "^1.0.8",
+    "cross-env": "^2.0.0",
     "ignore-styles": "^4.0.0",
     "istanbul": "github:gotwarlost/istanbul#v1",
     "jsdom": "^9.4.1",
