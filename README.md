@@ -8,9 +8,9 @@
 [![npm downloads](https://img.shields.io/npm/dm/rachelle.svg)](https://www.npmjs.org/package/rachelle)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/kflash/rachelle/blob/master/LICENSE.md)
 
-> Fast, compact and lightweight `TypeScript 2.0` boilerplate that export a single file.
+> Fast, compact and lightweight `TypeScript 2.1` boilerplate that export a single file.
 
-This boilerplate uses `TypeScript 2.0` by default, and `Rollup + Buble` to bundle a flat production bundle.
+This boilerplate uses `TypeScript 2.1` by default, and `Rollup + Buble` to bundle a flat production bundle.
 
 `Mocha + Chai` are used as the testing stack. Unit tests can be run with or without [`JSDOM`](https://github.com/tmpvar/jsdom).
 
